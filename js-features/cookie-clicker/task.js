@@ -26,3 +26,20 @@ function resizeCookie () {
 }
 
 cookie.onclick = resizeCookie;
+
+/**
+ * const cookie = document.getElementById("cookie");
+const counterDisplay = document.getElementById("clicker__counter");
+const speedDisplay = document.getElementById("speed");
+
+let prevTimestamp = Date.now();
+
+function handleClick() {
+   cookie.width = ++counterDisplay.textContent % 2 ? 250 : 200;
+   const currentTimestamp = Date.now();
+   const elapsedTime = currentTimestamp - prevTimestamp;
+   speedDisplay.textContent = (1 / (elapsedTime / 1000)).toFixed(2);
+   prevTimestamp = currentTimestamp;
+}
+cookie.onclick = handleClick;
+ */
