@@ -3,7 +3,7 @@ const min = document.getElementById('min');
 const sec = document.getElementById('sec');
 
 function decrementTimer(time) {
-    (time => time.textContent--)(time);
+    time.textContent--;
     if (time.textContent < 10) {
       time.textContent = "0" + time.textContent;
     }
