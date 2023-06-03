@@ -19,6 +19,15 @@ body {
   padding: 2px 5px;
 }
 
+.cart__product-cancle {
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  font-size: 22px;
+  color: #ff0000;
+  cursor: pointer;
+}
+
 .cart__product-image {
   border-radius: 6px;
   margin-right: 10px;
@@ -27,6 +36,7 @@ body {
   object-fit: contain;
 }
 .product {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -39,6 +49,10 @@ body {
 .product__image {
   width: 100px;
   object-fit: contain;
+}
+
+.product__image-clone {
+  position: absolute;
 }
 
 .product__quantity-title {
